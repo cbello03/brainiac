@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "74cb246b626329ed",
+        "id": "31950fb14341ffc6",
         "type": "tabs",
         "children": [
           {
-            "id": "7d0bea7ad8663619",
+            "id": "50bda9320ce593a2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "canguro/bases de datos.md",
+                "file": "canguro/Odoo de prueba.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "bases de datos"
+              "title": "Odoo de prueba"
             }
           }
         ]
@@ -169,9 +169,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d0bea7ad8663619",
+  "active": "50bda9320ce593a2",
   "lastOpenFiles": [
     "canguro/bases de datos.md",
+    "canguro/Odoo de prueba.md",
     "canguro/Untitled",
     "canguro",
     "odoo/Dependencies for odoo dev on pycharm.md",
@@ -203,7 +204,6 @@
     "entrenamiento fisico",
     "movilnet/Servidores - CCMA.md",
     "Incident Management.md",
-    "BMC Helix ISTM.md",
     "Important Devs",
     "tooling",
     "librerias",
