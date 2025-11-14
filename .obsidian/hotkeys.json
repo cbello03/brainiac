@@ -1,0 +1,18 @@
+{
+  "editor:add-cursor-below": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "editor:add-cursor-above": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "ArrowUp"
+    }
+  ]
+}

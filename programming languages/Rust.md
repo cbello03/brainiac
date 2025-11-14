@@ -1,0 +1,1 @@
+Lenguaje de programación pensado como un reemplazo de [[C++]] para crear aplicaciones mas seguras sin las problematicas de corrupción de memoria y data races de otros lenguajes de bajo nivel. Fue creado por Mozilla y es mantenido por la Rust Foundation.

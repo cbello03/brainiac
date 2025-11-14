@@ -1,0 +1,1 @@
+Superset de [[Javascript]] con tipado estático, en realidad funciona mas como un linter que transpila código a javascript.

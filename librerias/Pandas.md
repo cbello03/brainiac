@@ -1,0 +1,1 @@
+Es una libraria de [[Python]], que expande las funcionabilidades de [[Numpy]], para trabajar con data tabular (columnas y filas) como una hoja de excel.

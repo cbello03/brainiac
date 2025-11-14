@@ -1,0 +1,1 @@
+Libreria para utilizar [[Javascript]] de forma reactiva. Tiene sientos de componentes para trabajar con observables como si fueran colecciones.

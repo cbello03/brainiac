@@ -1,0 +1,1 @@
+Libreria robusta para realizar validaciones de formularios en componentes de [[Vuejs]]

@@ -1,0 +1,1 @@
+Lenguage creado para añadir dinamismo a las páginas web, hoy en día es el único lenguage de programación nativo para los exploradores web

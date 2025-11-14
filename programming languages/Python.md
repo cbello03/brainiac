@@ -1,0 +1,3 @@
+Lenguaje de programación dinámico creato por Guido van Rossum, un matemático que lo utilizó principalmente paar automatizar cáculos.
+
+Por esta razón python se empezó a utilizar para automatizar procesos y realziar cálculos matemáticos y estadístico, dando nacimiento a librerias como [[Numpy]] y [[Pandas]], convirtiendose silenciosamente en el mejor lenjuaje para data science y machine learning que es hoy en día.
