@@ -1,5 +1,4 @@
-
-[[odoo]]
+#odoo
 
 - Install this plugin from JetBrains Plugins Repository.
 - Install XPathView to support XML view inheritance features.

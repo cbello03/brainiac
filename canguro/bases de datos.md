@@ -1,4 +1,4 @@
-
+#canguro
 Base de datos de simplit pos (sql server)
 
 - DATABASE = SPCANGUROPPAL17
