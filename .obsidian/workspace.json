@@ -4,35 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "fc7d203b02ee7c0a",
+        "id": "57b2e56f3301d354",
         "type": "tabs",
         "children": [
           {
-            "id": "f0a7f7f86f4ea3b1",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
-            }
-          },
-          {
-            "id": "fb6f0d9d0dd527bb",
+            "id": "4c026714e1a8ed5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Odoo basic views.md",
+                "file": "Estado de resultados/Estado de resultados query.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Odoo basic views"
+              "title": "Estado de resultados query"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -64,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#odoo",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,14 +169,27 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb6f0d9d0dd527bb",
+  "active": "4c026714e1a8ed5f",
   "lastOpenFiles": [
+    "Estado de resultados/Estado de Resultados DB.md",
+    "Estado de resultados/Estado de resultados.md",
+    "Estado de resultados/implementacion 4 visualizacion.md",
+    "Pasted image 20251118155303.png",
+    "static",
+    "Nueva carpeta",
+    "Estado de resultados/implementacion 3 filtros avanzados.md",
+    "Estado de resultados/Untitled.md",
+    "Estado de resultados/implementacion 2 dinamico.md",
+    "Estado de resultados/Estado de resultados query.md",
+    "Estado de resultados/Modulo odo.md",
+    "Estado de resultados/modulo odoo implementacion.md",
+    "Estado de resultados",
+    "canguro/bases de datos.md",
     "Odoo basic views.md",
     "odoo/Odoo  commands.md",
     "odoo/Odoo module live edition.md",
     "odoo/Dependencies for odoo dev on pycharm.md",
     "canguro/Odoo de prueba.md",
-    "canguro/bases de datos.md",
     "Untitled.base",
     "dev plans/Telco training.md",
     "dev plans/The plan.md",
@@ -203,20 +205,8 @@
     "movilnet/Movilnet.md",
     "Proyectos/Nexus.md",
     "Clippings",
-    "sql/Covering index.md",
-    "Important Devs/Evan You.md",
     "dev plans",
-    "Proyectos/Catalyst.md",
-    "Proyectos/anshin pharma.md",
-    "entrenamiento fisico/Combat training.md",
-    "entrenamiento fisico/Exercise plan without equipment.md",
-    "Proyectos/ideas para proyectos.md",
-    "entrenamiento fisico/Training.md",
-    "programming languages/Elixir.md",
     "kenji",
-    "entrenamiento fisico",
-    "Important Devs",
-    "tooling",
     "Untitled.canvas"
   ]
 }
