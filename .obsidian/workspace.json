@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "e555be7e5156b937",
+        "id": "d13f6e447fcff1b8",
         "type": "tabs",
         "children": [
           {
-            "id": "bc4a3563a49988c3",
+            "id": "32aeca58ba0efba4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Proyectos/amoka itsm/Scallfold.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Scallfold"
             }
           }
         ]
@@ -165,12 +169,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bc4a3563a49988c3",
+  "active": "e726b4547b8bd4d5",
   "lastOpenFiles": [
+    "Proyectos/amoka itsm/Scallfold.md",
+    "Proyectos/amoka itsm",
+    "Proyectos/Amoca itsm db.md",
+    "Estado de resultados/feedback.md",
+    "Estado de resultados/implementacion 4 visualizacion.md",
     "Estado de resultados/Estado de resultados query.md",
     "canguro/bases de datos.md",
     "ai/chatgpt memory.md",
-    "Estado de resultados/implementacion 4 visualizacion.md",
     "ai",
     "Estado de resultados/implementacion 3 filtros avanzados.md",
     "Estado de resultados/implementacion 2 dinamico.md",
@@ -181,7 +189,6 @@
     "Estado de resultados/Estado de resultados.md",
     "static",
     "Nueva carpeta",
-    "Estado de resultados/Untitled.md",
     "Estado de resultados",
     "Odoo basic views.md",
     "odoo/Odoo  commands.md",
@@ -193,7 +200,6 @@
     "dev plans/The plan.md",
     "frameworks/Vuejs.md",
     "frameworks/Phoenix.md",
-    "Proyectos/Amoca itsm db.md",
     "Itsm/BMC Helix ISTM.md",
     "canguro/Untitled",
     "canguro",
@@ -201,9 +207,7 @@
     "Clippings/Increase the memory heap of the IDE  PyCharm.md",
     "odoo",
     "movilnet/Movilnet.md",
-    "Proyectos/Nexus.md",
     "Clippings",
-    "dev plans",
     "Untitled.canvas"
   ]
 }
