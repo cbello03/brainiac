@@ -112,3 +112,102 @@ GROUP BY aa.account_type, aa.code, aa.name
 
 ORDER BY aa.account_type, aa.code;
 ```
+
+
+view odoo
+
+```postgresql
+CREATE OR REPLACE MATERIALIZED VIEW report_profit_loss AS
+SELECT
+    aml.account_id,
+    aa.code AS account_code,
+    aa.name ->> 'es_VE' AS account_name,
+    aa.account_type,
+    SUM(aml.debit) AS total_debit,
+    SUM(aml.credit) AS total_credit,
+    SUM(aml.balance) AS net_balance,
+    aml.company_id,
+    rp.name AS company_name,
+    aml.currency_id,
+    rc.name AS currency_name,
+    aml.date AS aml_date
+FROM account_move_line aml
+JOIN account_move am ON aml.move_id = am.id
+JOIN account_account aa ON aml.account_id = aa.id
+LEFT JOIN res_company rp ON aml.company_id = rp.id
+LEFT JOIN res_currency rc ON aml.currency_id = rc.id
+WHERE am.state = 'posted'
+  AND aa.account_type IN (
+      'income', 'income_other', 
+      'expense', 'expense_depreciation', 'expense_direct_cost'
+  )
+GROUP BY 
+    aml.account_id,
+    aa.code, aa.name, aa.account_type,
+    aml.company_id, rp.name,
+    aml.currency_id, rc.name
+    aml.date
+WITH NO DATA;
+```
+
+index for materialized view
+
+```postgresql
+CREATE UNIQUE INDEX report_profit_loss_uidx
+ON report_profit_loss (account_id, company_id, currency_id, aml_date);
+```
+
+
+final materialized view
+```postgresql
+CREATE OR REPLACE MATERIALIZED VIEW report_profit_loss AS
+WITH expanded AS (
+    SELECT
+        aml.id AS line_id,
+        aml.date AS line_date,
+        aml.account_id,
+        aa.code AS account_code,
+        aa.name ->> 'es_VE' AS account_name,
+        aa.account_type,
+        aacc.id AS analytic_account_id,
+        aacc.name ->> 'es_VE' AS analytic_account_name,
+        (x.value)::numeric AS analytic_percent,
+        aml.debit * ((x.value)::numeric / 100.0) AS debit_allocated,
+        aml.credit * ((x.value)::numeric / 100.0) AS credit_allocated,
+        aml.balance * ((x.value)::numeric / 100.0) AS balance_allocated
+    FROM account_move_line aml
+    JOIN account_move am ON am.id = aml.move_id
+       AND am.state = 'posted'
+    JOIN account_account aa ON aa.id = aml.account_id
+    JOIN LATERAL jsonb_each_text(aml.analytic_distribution) AS x(key, value) ON x.key ~ '^[0-9]+$'
+    JOIN account_analytic_account aacc ON aacc.id = x.key::int
+    WHERE aa.account_type IN (
+        'income',
+        'income_other',
+        'expense',
+        'expense_depreciation',
+        'expense_direct_cost'
+    )
+)
+SELECT
+    analytic_account_id,
+    analytic_account_name,
+    account_id,
+    account_code,
+    account_name,
+    account_type,
+    SUM(debit_allocated) AS total_debit,
+    SUM(credit_allocated) AS total_credit,
+    SUM(balance_allocated) AS net_balance
+FROM expanded
+-- Optional: filter by date dynamically via wizard parameters
+-- WHERE line_date BETWEEN '2025-09-01' AND '2025-12-31'
+GROUP BY
+    analytic_account_id,
+    analytic_account_name,
+    account_id,
+    account_code,
+    account_name,
+    account_type
+ORDER BY account_code;
+```
