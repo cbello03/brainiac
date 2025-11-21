@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "8346cd1896d52d66",
+        "id": "5806bfcbc256eca7",
         "type": "tabs",
         "children": [
           {
-            "id": "bd4afd97877c6502",
+            "id": "84f65bb31d380bde",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Estado de resultados/calculo de ganancias.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "calculo de ganancias"
             }
           }
         ]
@@ -187,8 +191,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "bd4afd97877c6502",
+  "active": "84f65bb31d380bde",
   "lastOpenFiles": [
+    "Estado de resultados/calculo de ganancias.md",
+    "Estado de resultados/Saved MV.md",
+    "Estado de resultados/final implementation.md",
+    "Untitled.canvas",
     "entrenamiento fisico/meals/healthy meals.md",
     "entrenamiento fisico/final plan of exercises.md",
     "entrenamiento fisico/meals",
@@ -220,12 +228,8 @@
     "Untitled.base",
     "dev plans/Telco training.md",
     "dev plans/The plan.md",
-    "frameworks/Vuejs.md",
-    "frameworks/Phoenix.md",
-    "Itsm/BMC Helix ISTM.md",
     "canguro/Untitled",
     "canguro",
-    "odoo",
-    "Untitled.canvas"
+    "odoo"
   ]
 }
