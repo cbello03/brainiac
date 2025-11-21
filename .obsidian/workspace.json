@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d13f6e447fcff1b8",
+        "id": "8346cd1896d52d66",
         "type": "tabs",
         "children": [
           {
-            "id": "32aeca58ba0efba4",
+            "id": "bd4afd97877c6502",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Proyectos/amoka itsm/Scallfold.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Scallfold"
+              "title": "New tab"
             }
           }
         ]
@@ -169,8 +165,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e726b4547b8bd4d5",
+  "active": "bd4afd97877c6502",
   "lastOpenFiles": [
+    "entrenamiento fisico/meals/healthy meals.md",
+    "entrenamiento fisico/final plan of exercises.md",
+    "entrenamiento fisico/meals",
+    "entrenamiento fisico/Plan de ejercicios.md",
     "Proyectos/amoka itsm/Scallfold.md",
     "Proyectos/amoka itsm",
     "Proyectos/Amoca itsm db.md",
@@ -203,11 +203,7 @@
     "Itsm/BMC Helix ISTM.md",
     "canguro/Untitled",
     "canguro",
-    "Clippings/Source install — Odoo 19.0 documentation.md",
-    "Clippings/Increase the memory heap of the IDE  PyCharm.md",
     "odoo",
-    "movilnet/Movilnet.md",
-    "Clippings",
     "Untitled.canvas"
   ]
 }
