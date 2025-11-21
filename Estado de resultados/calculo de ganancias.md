@@ -18,3 +18,16 @@ DEP.balance = depreciacion
 OPINC.balance = ingresos de la operacion
 OIN.balance = otros ingresos
 COS.balance = costo de ingreso
+
+
+
+## Conclusion
+
+- ingreso = income + income_other
+- ganancia_bruta = income - expense_direct_cost
+- ingresos_de_operación = income
+- costo_de_ingreso = expense_direct_cost
+- otros_ingresos = income_other
+- gastos = expense + expense_depreciation
+- depreciacion = expense_depreciation
+- ganancia_neta =  income +  income_other - expense_direct_cost - expense + expense_depreciation - expense_depreciation
